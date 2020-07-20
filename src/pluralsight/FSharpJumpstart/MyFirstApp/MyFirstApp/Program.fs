@@ -2,7 +2,11 @@
 
 open System
 
+let SayHello() = 
+    printfn "Hello"
+
 [<EntryPoint>]
 let main argv =
-    printfn "Hello World from F#!"
+    SayHello()
+    System.Console.ReadKey() |> ignore
     0 // return an integer exit code
